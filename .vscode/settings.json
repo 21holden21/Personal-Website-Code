@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2e2595ee-64ac-4179-b8f5-721c2d6f1563/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/holdenondrej",
+    "appService.deploySubpath": "."
+}
