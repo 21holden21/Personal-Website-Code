@@ -1,0 +1,17 @@
+.library-content{ /* make the div that will hold the "library playlist" 94% of the height of the browser window */
+    height: 94%;
+}
+
+.bookshelf{ 
+    height: 70%;
+    width: 85%;
+    overflow-x: auto; /* keep only the horizontal scrollbar and don't allow vertical scrollbar to appear when card is flipped (perspective causes it to grow outside the black background) */
+    overflow-y: hidden;
+}
+
+/* On screens that are 3840px or more wide (4K devices), increase spacing between books */
+@media screen and (min-width: 3840px) {
+    .bookshelf{
+        gap: 3rem !important;
+    }
+  }

@@ -1,0 +1,46 @@
+.heading-img{ /* completely fill right column of the heading section */
+  height: 100%; 
+  width: 100%;
+}
+  
+.about{ /* to center the "back to top" anchor text*/
+  text-align: center;
+}
+
+.about-content{ 
+  text-align: left; /* to left align the about me text*/
+  color: white; /* to color the text white */
+}
+
+.circle-img{
+  border-radius: 50%; /* to make the image a circle */
+  height: 100%; 
+  width: 50%;
+}
+
+/* need a max media query breakpoint at 1100px because the circular image in the about section gets distorted when width of viewport decreases */
+
+/* On screens that are 1100px or less, increase width percentage/decrease height percentage of circular image*/
+@media screen and (max-width: 1100px) {
+  .circle-img{
+    height: 90% !important;
+    width: 60% !important;
+  }
+}
+
+.entire-home{ /* make the div that will hold the entire home page 100vh */
+  height: 100%
+}
+.heading-div{ /* make the div that will hold the heading content (greeting text/photo) 94% of the height of the browser window */
+  height: 94%
+}
+.heading-content{ /* make sure the heading content is 100% of the height of the heading div, which is 94% of the height of the browser window */
+  height: 100%
+}
+.content-col{ /* make sure each column in the heading content row is 100% of the height of the row, which is 94% of the height of the browser window */
+  height: 100%
+}
+
+.scroll-btn, .to-top-link{
+  font-size: large;
+}

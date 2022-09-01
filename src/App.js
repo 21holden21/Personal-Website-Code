@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import AppRouter from './components/AppRouter'
+import NavBarComponent from './components/NavBar';
+import ParticlesComponent from './components/Particles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="outermost-div"> 
+
+      <NavBarComponent/> {/* over-particles class already toggled inside the NavBarComponent, so it will display over the particle background */}
+      <AppRouter/>
+      <ParticlesComponent/>
+
     </div>
   );
 }

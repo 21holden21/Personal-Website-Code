@@ -1,0 +1,5 @@
+.resume-content{ /* make the div that will hold the download anchor text and resume previewer 94% of the height of the browser window */
+    height: 94%;
+    font-size: x-large; /* make anchor text for download slightly larger */
+}
+  

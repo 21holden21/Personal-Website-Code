@@ -1,0 +1,55 @@
+.flip-card-container { /* container that holds the card that can be flipped in 3d */
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /* turns direct children into a 3d object */
+}
+
+.flip-card-container:hover .flip-card-inner{
+    transform: rotateY(180deg); /* rotate the card every time it is hovered over */
+}
+
+.flip-card-inner { /* the actual card to be flipped */
+    position: relative; /* stack the front and back content of the card on top of each other */
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d; /* to ensure the back and front face of the card can be distinguished from one another */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute; /* stack the front and back content of the card on top of each other */
+    backface-visibility: hidden; /* hide the side of the card facing away from the user */
+    width: 100%;
+    height: 100%;
+    border: 4px solid; /* the color will be determined by the book's status */
+}
+
+.flip-card-back{ /* content on the back of the flipping card */
+    transform: rotateY(180deg); /* reflect back face content across the y axis */
+    overflow-y: auto;
+}
+
+.book-img{ /* make image 90% of the card */
+    height: 90%;
+    width: 100%;
+}
+
+.status{ /* make status 10% of the card */
+    height: 10%;
+    width: 100%;
+}
+
+
+/* On screens that are 1920px or more wide, increase font size*/
+@media screen and (min-width: 1920px) {
+    .flip-card-front, .flip-card-back{
+        font-size: 115%;
+    }
+  }
+
+/* On screens that are 3840px or more wide (4K devices), increase font size*/
+@media screen and (min-width: 3840px) {
+    .flip-card-front, .flip-card-back{
+        font-size: 200%;
+    }
+  }
