@@ -15,7 +15,7 @@ const NavBarComponent = () => {
                             <a className="nav-link" href="./my-library">My Library</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="https://github.com/21holden21/Analyzing-Cricket-Songs-with-Machine-Learning.git">Website Code</a>
+                            <a className="nav-link" href="https://github.com/21holden21/Personal-Website-Code.git">Website Code</a>
                             </li>
                         </ul>
                     </div>
